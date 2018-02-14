@@ -1,0 +1,147 @@
+.logo-top{
+    width:100%;
+    margin:0;
+    padding:0;
+    color:snow;
+    font-family: monospace;
+    font-size:22px;
+    display:flex;
+    align-items: center;
+    letter-spacing: 1px;
+    
+}
+h5{text-align: center;color:snow;}
+.fa-css3{margin:10px;color:skyblue;font-size:50px;
+
+}
+.menu{
+    margin-top: 50px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid re;
+    
+}
+.search-up{
+  overflow: hidden;
+  width:50px;
+  height: 30px;
+  border: none;
+  background: transparent;
+  border:2px solid rgba(255,255,255,.6);
+  border-radius: 3px;
+  color:snow;
+  text-align: right;
+  padding-left: 30px;
+  padding-right:5px;
+    margin-right: 20px;
+  transition:.3s;
+}
+
+/* show search width */
+input[type="text"]:hover{
+    background: rgba(0,0,250,.2);
+}
+
+input[type="text"]:focus{
+     border:2px solid rgba(255,255,255,1);
+    background: rgba(255,255,255,.1);
+} 
+
+
+.show-search{width:170px;
+
+}
+.time{transition-delay: 1s;}
+
+::placeholder{color:rgba(255,255,255,.4);}
+.fa-search{
+transform: translateX(25px);
+   color:rgba(255,255,255,.6);
+   
+}
+
+
+
+.menu ul{
+    display:flex;
+    padding:0;
+    
+}
+.menu .fa-clock,
+.menu .fa-male,
+.menu .fa-images,
+.menu .fa-envelope,
+.menu .fa-home{   
+    color: rgba(255,255,255,.6);
+    margin-bottom: 5px;
+    font-size:14px;
+}
+
+
+.menu li:hover {
+    background:rgba(255,255,255,.1);
+}
+/* scale bigger */
+
+/*scale less*/
+.menu li:active{transform: scale(.9)translateY(5px);
+    
+    transition:.2s;
+    background: transparent
+
+}
+/*scale less*/
+
+.menu li:hover .fa-home{
+    transform: scale(2.5)translateY(6px);
+    color:snow;
+    text-shadow:0 0 3px black;
+}
+
+.menu li:hover .fa-male{
+    transform: scale(2.5)translateY(6px);
+    color:snow;
+    text-shadow:0 0 3px black;
+}
+
+.menu li:hover .fa-clock{
+    transform: scale(2.5)translateY(6px);
+    color:snow;
+    text-shadow:0 0 3px black;
+}
+
+.menu li:hover .fa-images{
+    transform: scale(2.5)translateY(6px);
+    color:snow;
+    text-shadow:0 0 3px black;
+}
+
+.menu li:hover .fa-envelope{
+    transform: scale(2.5)translateY(6px);
+    color:snow;
+    text-shadow:0 0 3px black;
+}
+/* scale bigger icons*/
+.menu ul li:hover a{
+    transform: scale(0);
+}
+.menu li a{
+    color: rgba(255,255,255,.8);
+    font-size:20px;
+    text-decoration: none;
+    font-family:calibri;
+    padding: 0;
+}
+.menu li{
+    list-style: none;
+    border:2px solid re;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 30px;
+    cursor:pointer;
+    
+    
+}
+*{transition: .2s;}
