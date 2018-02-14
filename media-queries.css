@@ -1,0 +1,118 @@
+body{padding:0;margin:0;}
+@media(max-width:1100px){
+    .content-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+    
+    .left-content,.right-content,.container{width:100%!important;
+    margin:10px;}
+    
+    contact-box .right-content{grid-gap: 0!important;}
+    
+   .info-content:hover .fa-codepen,
+.contact-box:hover .fa-envelope-square,
+.gallery-box:hover .fa-camera-retro, 
+.icon-box:hover .fa-searchengin{
+    color:white;
+      transform: scale(.5)!important;
+}
+.info-content:hover h2,
+.contact-box:hover h2,
+.gallery-box:hover h2,
+.icon-box:hover h2{
+    transform: translatey(-20px)!important;
+}
+    
+    
+}
+
+
+
+@media(max-width:800px){
+   
+    .right-content{
+         grid-template-columns: 1fr!important;
+        
+        grid-template-rows:repeat(7,1fr);
+       grid-template-areas:
+         "left-top"
+           " right-top"
+         "left-middle"          
+         " icon-box"
+           " slider"            
+           " slider"
+         "left-bottom"
+            "left-bottom"            
+           " right-bottom"!important
+         ;
+    }
+    .box-number-three{
+        flex-direction: column;
+    }
+    .box-number-three div:last-child{
+       width:calc(100% - 20px)!important;
+    }
+    .box-number-three div:first-child{
+       width:calc(100% - 20px)!important;
+    }
+    .box-number-three div:last-child span{
+        min-width:50px;
+        min-height:180px;
+    }
+    .box-number-three div:last-child{
+      
+        flex-direction: column;
+    }
+    .menu ul{flex-direction: column;}
+    .menu{flex-direction: column;}
+    div.toggle{transition: .2s;}
+    div.toggle{
+        
+        content:"\00d7";
+        animation: none;
+        color:white;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }    
+    
+    .menu{display:none;
+    padding-bottom: 10px;
+    background: rgba(0,0,0,.3);
+         display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        z-index: 50;
+        margin:0;
+        overflow: hidden;
+    }
+    .menu .ul{
+        display:none;
+}
+    nav.menu{
+        box-shadow: 0 0 5px rgba(0,0,0,1);
+    }
+
+.jo{
+    transform: translateY(5px);
+    color:rgba(255,255,255,.6)!important;
+}
+
+.menu-show{
+   
+    display:block!important;
+    
+    
+}
+
+}
+
+.toggle{margin:5px 0;
+
+display:none;}
