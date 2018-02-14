@@ -1,0 +1,34 @@
+
+.menu li:hover .fa-home{
+    transform: scale(2.5)translateY(6px);
+    color:snow;
+    text-shadow:0 0 3px black;
+    
+}
+.animation{animation:zigzag .4s linear;background: transparent!important;}
+@keyframes zigzag {
+    0%{transform: translate(0)}
+    25%{transform: translatey(-5px)}
+    50%{transform: translatey(5px)}
+    75%{transform: translatey(20px)rotate(-20deg)}
+    100%{transform: translatey(0)rotate(20deg)}
+}
+
+
+.menu li:hover .fa-male{
+    transform: scale(2.5)translateY(6px);
+    color:snow;
+    text-shadow:0 0 3px black;
+}
+
+.menu li:hover .fa-clock{
+    transform: scale(2.5)translateY(6px);
+    color:snow;
+    text-shadow:0 0 3px black;
+}
+
+.menu li:hover .fa-images{
+    transform: scale(2.5)translateY(6px);
+    color:snow;
+    text-shadow:0 0 3px black;
+}
