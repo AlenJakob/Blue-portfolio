@@ -1,0 +1,53 @@
+
+.style-color{
+    border-radius: 3px;
+    box-shadow:0 0 5px rgba(12,63,91,1);    
+}
+
+.right-content{
+     height:auto;
+    width:45%;
+   background:gree;/*toremove*/
+    display: grid;   
+    grid-gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+     grid-template-areas:
+         "left-top right-top"
+         "left-middle icon-box"
+         "left-middle slider"
+         "left-bottom right-bottom"
+         ;
+}
+/* Grid area  names */
+.gallery-box{
+    grid-area: left-top;
+    background:linear-gradient(rgba(93,159,191,1),rgba(56,136,163,1));
+}
+.contact-box{
+    grid-area: right-top;
+    background:linear-gradient(to right bottom ,rgba(191,92,121,1),rgba(161,52,94,1));
+}
+.info-content{
+    grid-area: left-middle;
+    background:linear-gradient(rgba(93,159,191,1),rgba(56,136,163,1));
+}
+.icon-box{
+    grid-area: icon-box;
+    background:rgba(16,72,121,1);
+}
+.photo-small-slider{
+    grid-area: slider;
+    background:linear-gradient(rgba(93,159,191,1),rgba(56,136,163,1));
+    min-height: 100px;
+}
+.about-me{
+    grid-area: left-bottom;
+    background:linear-gradient(rgba(93,159,191,1),rgba(56,136,163,1));
+}
+.weather-box{
+    grid-area: right-bottom;
+    background:linear-gradient(rgba(93,159,191,1),rgba(56,136,163,1));
+}
+
+
+
