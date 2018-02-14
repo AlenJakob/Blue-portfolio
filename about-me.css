@@ -1,0 +1,87 @@
+
+
+.about-me{
+    background:url(https://cdn.pixabay.com/photo/2016/11/19/13/10/girl-1839203_960_720.jpg)!important;
+    background-position: center!important;
+    background-size: cover!important;
+    overflow: hidden;
+    display: flex;
+}
+.about-me div{
+    width:100%;
+    height:40%;
+    background:rgba(255,255,255,.2);
+    align-self: flex-end;
+    position: relative;
+   top:150px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.about-me div h3:hover{
+    transform: translateY(5px);
+}
+.about-me div h3{margin:0;
+padding:0;padding-top: 15px;
+color:white;
+    text-shadow: 0 0 6px black; 
+    
+}
+
+.about-me:hover div{
+    top:00px
+}
+.about-me div h3{
+    text-align: center;
+    font-size-adjust: auto;
+}
+
+
+/* Weather box */
+.weather-box h2{
+    color:white;
+    text-align: center;
+    
+}
+.weather-box{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+.weather-box div{
+   
+    font-size:16px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding:40px 0 0 0;
+}
+
+.fa-moon,.fa-bolt,.fa-cloud{
+    font-size:66px;
+    color:rgba(255,255,255,.8);
+    
+    
+}
+.weather-box:hover {
+  
+    background: rgba(0,0,0,.4);
+    box-shadow: 0 0 24px rgba(0,0,0,.011);
+    
+}
+
+.weather-box:hover .fa-moon{color:skyblue;transform: translateX(24px)scale(1.8)rotate(180deg);
+
+}
+
+.weather-box h2{
+    padding-top: 20px;
+}
+.weather-box:hover .fa-bolt{color:white;
+transform:translateY(-15px)scale(1.5);
+    color:azure;
+}
+
+
+.weather-box:hover .fa-cloud{color:royalblue;transform: translateX(-15px)translateY(12px)scale(1.2)}
+
